@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    
+    
+    <div class="nav">
+        <div class="container">
+            <h1>Rangoli Competition</h1>
+            <!-- <a href="#" class="img-icon" onclick="togglemodal('#infomodal');">
+                <img src="img/info_icon.svg" alt="">
+            </a> -->
+        </div>
+    </div>
+    <section class="body-section">
+        <div class="container ">
+            <p>
+                Neosoftians have always been at their best in demonstrating their creativity and enthusiasm in what they do. Our recent Rangoli competition captured the best of them and we share the masterpieces with you. 
+            </p>
+            <p>
+                Please Vote for the <b>‘Top 3’</b> Rangoli designs and help us choose the winners!
+            </p>
+
+
+            <ul class="img-list">
+                <div class="left">
+                <li>
+                    <label for="rangoli1">
+                        <input type="checkbox" name="" id="rangoli1">
+                        <div class="checked">
+                            <img src="img/tick_icon.svg" alt="tick icon">
+                        </div>
+                        <img src="img/rangoli_3.png" alt="Rangoli_1">
+                    </label>
+                </li>
+                <li>
+                    <label for="rangoli2">
+                        <input type="checkbox" name="" id="rangoli2">
+                        <div class="checked">
+                            <img src="img/tick_icon.svg" alt="tick icon">
+                        </div>
+                        <img src="img/rangoli_5.png" alt="Rangoli_2">
+                    </label>
+                </li>
+                <li>
+                    <label for="rangoli3">
+                        <input type="checkbox" name="" id="rangoli3">
+                        <div class="checked">
+                            <img src="img/tick_icon.svg" alt="tick icon">
+                        </div>
+                        <img src="img/rangoli_2.png" alt="Rangoli_3">
+
+                    </label>
+                </li>
+            </div>
+            <div class="right1">
+
+            
+                <li>
+                    <label for="rangoli4">
+                        <input type="checkbox" name="" id="rangoli4">
+                        <div class="checked">
+                            <img src="img/tick_icon.svg" alt="tick icon">
+                        </div>
+                        <img src="img/rangoli_1.png" alt="Rangoli_4">
+                    </label>
+                </li>
+                <li>
+                    <label for="rangoli5">
+                        <input type="checkbox" name="" id="rangoli5">
+                        <div class="checked">
+                            <img src="img/tick_icon.svg" alt="tick icon">
+                        </div>
+                        <img src="img/rangoli_6.png" alt="Rangoli_5">
+                    </label>
+                </li>
+                <li>
+                    <label for="rangoli6">
+                        <input type="checkbox" name="" id="rangoli6">
+                        <div class="checked">
+                            <img src="img/tick_icon.svg" alt="tick icon">
+                        </div>
+                        <img src="img/rangoli_4.png" alt="Rangoli_6">
+                    </label>
+                </li>
+
+            </div>
+            </ul>
+
+
+            <div class="footer-fixed">
+                <button type="submit" class="btn-primary">Vote</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <div class="modal" id="infomodal" onclick="closemodal(this)">
+        <div class="modal-body">
+            <h2>Modal Title</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis consectetur ducimus quisquam architecto minus nam, animi voluptates necessitatibus similique ab sequi consequatur quae itaque, beatae, veritatis at pariatur ad? Dolorem.</p>
+            <button class="btn-outline">
+                Click Me
+            </button>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        function togglemodal(targetid){
+            var targetmodal = document.querySelector(targetid);
+            targetmodal.classList.add("active");
+        }
+        function closemodal(targetid){
+            if(targetid.classList.contains('modal')){
+                targetid.classList.remove("active");
+            }
+        }
+
+
+        
+
+        
+
+
+    </script>
+</body>
+</html>
